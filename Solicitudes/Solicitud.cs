@@ -4,15 +4,16 @@ public record Solicitud
     public string? NombreCompletoCliente { get; set; }
     public int Plazo { get; set; }
     public long Monto { get; set; }
+    public DateTime Fecha { get; set; }
 }
 
 public class SolicitudesDB
 {
     private static List<Solicitud> _solicitudes = new List<Solicitud>()
    {
-     new Solicitud{ Id=1, NombreCompletoCliente="Cristian Correa", Monto = 15000000, Plazo=15 },
-     new Solicitud{ Id=2, NombreCompletoCliente="Camilo Correa", Monto = 10000000, Plazo=10 },
-     new Solicitud{ Id=3, NombreCompletoCliente="Pedro Perez", Monto = 24000000, Plazo=24 }
+     new Solicitud{ Id=1, NombreCompletoCliente="Cristian Correa", Monto = 15000000, Plazo=15, Fecha = DateTime.Now },
+     new Solicitud{ Id=2, NombreCompletoCliente="Camilo Correa", Monto = 10000000, Plazo=10, Fecha = DateTime.Now },
+     new Solicitud{ Id=3, NombreCompletoCliente="Pedro Perez", Monto = 24000000, Plazo=24, Fecha = DateTime.Now }
    };
 
     public static List<Solicitud> GetSolicitudes()
