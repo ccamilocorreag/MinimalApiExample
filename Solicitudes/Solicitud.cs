@@ -6,7 +6,9 @@ public record Solicitud
     public int Plazo { get; set; }
     public long Monto { get; set; }
     public long MontoAprobado { get; set; }
+    public DateTime FechaAprobacion { get; set; }
     public int  EstadoId { get; set; }
+    public string? PrimerNombre { get; set; }
 }
 
 public class SolicitudesDB
