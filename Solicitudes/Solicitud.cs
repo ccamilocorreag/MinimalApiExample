@@ -1,9 +1,12 @@
 public record Solicitud
 {
     public int Id { get; set; }
+    public string? IdentificacionCliente { get; set; }
     public string? NombreCompletoCliente { get; set; }
     public int Plazo { get; set; }
     public long Monto { get; set; }
+    public long MontoAprobado { get; set; }
+    public int  EstadoId { get; set; }
 }
 
 public class SolicitudesDB
