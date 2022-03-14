@@ -9,6 +9,8 @@ public record Solicitud
     public DateTime FechaAprobacion { get; set; }
     public int  EstadoId { get; set; }
     public string? PrimerNombre { get; set; }
+    public string? PrimerApellidoCliente { get; set; }
+    public string? SegundoApellidoCliente { get; set; }
 }
 
 public class SolicitudesDB
