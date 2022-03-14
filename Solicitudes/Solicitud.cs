@@ -7,6 +7,8 @@ public record Solicitud
     public long Monto { get; set; }
     public long MontoAprobado { get; set; }
     public int  EstadoId { get; set; }
+    public string? PrimerApellidoCliente { get; set; }
+    public string? SegundoApellidoCliente { get; set; }
 }
 
 public class SolicitudesDB
